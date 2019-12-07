@@ -1,3 +1,5 @@
 # Network
 
-<network />
+<ClientOnly>
+  <network />
+</ClientOnly>

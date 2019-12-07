@@ -1,3 +1,5 @@
 # Browser
 
-<browser />
+<ClientOnly>
+  <browser />
+</ClientOnly>

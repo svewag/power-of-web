@@ -5,16 +5,16 @@
       <p>{{ online }}</p>
 
       <h2>Data-Saver</h2>
-      <p>{{ navigator.connection.saveData }}</p>
+      <p>{{ window.navigator.connection.saveData }}</p>
 
       <h2>Type</h2>
-      <p>{{ navigator.connection.effectiveType }}</p>
+      <p>{{ window.navigator.connection.effectiveType }}</p>
 
       <h2>Downlink</h2>
-      <p>{{ navigator.connection.downlink }}</p>
+      <p>{{ window.navigator.connection.downlink }}</p>
 
       <h2>RTT</h2>
-      <p>{{ navigator.connection.rtt }}</p>
+      <p>{{ window.navigator.connection.rtt }}</p>
     </div>
   </ClientOnly>
 </template>
@@ -24,13 +24,12 @@ export default {
   name: 'network',
   data () {
     return {
-      navigator: window.navigator,
       online: navigator.onLine
     }
   },
   mounted () {
     const getOnlineStatus = () => {
-      this.online = navigator.onLine
+      this.online = window.navigator.onLine
     }
 
     window.addEventListener('online', getOnlineStatus)

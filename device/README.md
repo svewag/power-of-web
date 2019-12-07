@@ -1,3 +1,5 @@
 # Device
 
-<device />
+<ClientOnly>
+  <device />
+</ClientOnly>

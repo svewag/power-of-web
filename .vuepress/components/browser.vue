@@ -21,16 +21,18 @@ export default {
   name: 'browser',
   data () {
     return {
-      navigator: window.navigator,
+      navigator: window ? window.navigator : null,
     }
   },
   computed: {
     vendor () {
-      return [
-        this.navigator.vendor,
-        this.navigator.vendorSub]
-        .filter(Boolean)
-        .join(', ')
+      if (this.navigator) {
+        return [
+          this.navigator.vendor,
+          this.navigator.vendorSub]
+          .filter(Boolean)
+          .join(', ')
+      }
     }
   },
 }
