@@ -12,6 +12,7 @@ module.exports = {
       '/bluetooth/',
       '/camera/',
       '/geolocation/',
+      '/credentials/',
       '/css/',
     ]
   }
