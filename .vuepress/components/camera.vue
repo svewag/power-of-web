@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'media',
+  name: 'camera',
   data () {
     return {
       front: false,

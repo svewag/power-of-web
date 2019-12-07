@@ -10,7 +10,9 @@ module.exports = {
       '/network/',
       '/browser/',
       '/bluetooth/',
-      '/media/',
+      '/camera/',
+      '/geolocation/',
+      '/css/',
     ]
   }
 }
